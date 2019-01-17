@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="tableViewCellIdentifier" rowHeight="50" id="rEk-Ej-2ER" customClass="LabelCell" customModule="_DTable" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="202" height="50"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="rEk-Ej-2ER" id="d5D-Hy-qrg">
+                <rect key="frame" x="0.0" y="0.0" width="202" height="49.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="6" translatesAutoresizingMaskIntoConstraints="NO" id="Sfu-GQ-N7q">
+                        <rect key="frame" x="0.0" y="0.0" width="202" height="49.5"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="49.5" id="00i-zm-nrB"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="Sfu-GQ-N7q" secondAttribute="trailing" id="IrZ-zL-rCl"/>
+                    <constraint firstItem="Sfu-GQ-N7q" firstAttribute="top" secondItem="d5D-Hy-qrg" secondAttribute="top" id="Q20-vY-xxv"/>
+                    <constraint firstItem="Sfu-GQ-N7q" firstAttribute="leading" secondItem="d5D-Hy-qrg" secondAttribute="leading" id="UK4-wt-5dq"/>
+                    <constraint firstAttribute="bottom" secondItem="Sfu-GQ-N7q" secondAttribute="bottom" id="fHC-2q-jH4"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+            <connections>
+                <outlet property="cellHeight" destination="00i-zm-nrB" id="Eoy-OK-khm"/>
+                <outlet property="titleLabel" destination="Sfu-GQ-N7q" id="ufb-oP-jVe"/>
+            </connections>
+            <point key="canvasLocation" x="108.8" y="109.74512743628186"/>
+        </tableViewCell>
+    </objects>
+</document>
